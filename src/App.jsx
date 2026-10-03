@@ -4,14 +4,19 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Hero from "./components/Hero";
+import AsciiBackground from "./components/AsciiBackground";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <main>
-        <Hero />
-      </main>
+      <AsciiBackground />
+      <div className="site-frame">
+        <Navbar />
+
+        <main>
+          <Hero />
+        </main>
+      </div>
     </>
   );
 }

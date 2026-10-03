@@ -1,6 +1,9 @@
-/* PALETTE */
+/* =========================
+   Variables
+========================= */
+
 :root {
-  --background: #000000; /* BLACK BACKGROUND */
+  --background: #090909; /* BLACK BACKGROUND */
   --background-light: #131516; /* DARK GRAY */
 
   --highlight: #e16a90; /* PINK HIGHLIGHT */
@@ -9,11 +12,33 @@
   --button-primary: #c2baba;
   --button-primary-hover: #e3dcdc;
 
-  --button-secondary: #101017;
+  --button-secondary: #181821;
   --button-secondary-hover: #141414;
 
   --text-main: #eae8e8;
   --text-main-muted: #c8c8c8;
+}
+
+/* =========================
+   Border frame
+========================= */
+
+.site-frame {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  border-left: 1px dashed;
+  border-right: 1px dashed;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  padding: 24px;
+
+  box-shadow:
+    0 0 10px rgba(228, 90, 166, 0.154),
+    0 0 30px rgba(228, 90, 166, 0.194);
 }
 
 /* =========================
@@ -58,7 +83,7 @@ p {
 
 .navbar {
   width: 100%;
-  background: var(--background);
+  z-index: 1;
 }
 
 .navbar-container {
@@ -104,6 +129,7 @@ p {
 
   font-size: 14px;
   font-weight: 500;
+  z-index: 1;
 
   transition:
     background 0.2s ease,
@@ -237,6 +263,11 @@ p {
   border-radius: 18px;
 
   background: #eee;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.05),
+    0 0 30px rgba(255, 255, 255, 0.08);
 }
 
 .hero-image img {
@@ -246,6 +277,42 @@ p {
   object-fit: cover;
 
   display: block;
+}
+
+/* =========================
+   ASCII Background
+========================= */
+
+main {
+  position: relative;
+  z-index: 0;
+}
+
+.ascii-background {
+  position: fixed;
+  inset: 0;
+
+  padding: 10px;
+
+  overflow: hidden;
+  pointer-events: none;
+
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 16px;
+
+  opacity: 0.05;
+
+  z-index: 0;
+
+  color: #faf9fa;
+}
+
+.ascii-row {
+  height: 16px;
+  line-height: 16px;
+
+  white-space: pre;
 }
 
 /* =========================
