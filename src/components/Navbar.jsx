@@ -1,15 +1,20 @@
 function Navbar() {
   return (
-    <header>
-      <nav>
-        <a href="#home">Portfolio</a>
+    <header className="navbar">
+      <div className="navbar-container">
+        <a href="#" className="logo">
+          ELMERI NIEMINEN
+        </a>
 
-        <div>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+        <nav className="nav-links">
+          <a href="#projects">PROJECTS</a>
+          <a href="#about">ABOUT</a>
+        </nav>
+
+        <a href="#contact" className="nav-button">
+          CONTACT ME
+        </a>
+      </div>
     </header>
   );
 }
