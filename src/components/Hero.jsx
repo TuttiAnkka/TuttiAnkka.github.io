@@ -6,7 +6,16 @@ function Hero() {
           <h1>Elmeri Nieminen</h1>
 
           <p className="eyebrow">SOFTWARE - GAMES - MUSIC</p>
-          <p className="hero-description">TODO</p>
+          <p className="hero-description">
+            Currently studying information technology at Karelia University of
+            Applied Sciences, specializing in software development. Previously
+            graduated as a Game Developer in 2020.
+            <br />
+            <br />
+            During my career I have accumulated a lot of experience with varying
+            technologies. These include, but are not limited to: C, C#, Python,
+            JavaScript and Rust.{" "}
+          </p>
 
           {/* Buttons might not be needed.. lets see
           <div className="hero-actions">

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const CHARS = ".:+*            ";
-
 const CELL_WIDTH = 8;
 const CELL_HEIGHT = 16;
 
