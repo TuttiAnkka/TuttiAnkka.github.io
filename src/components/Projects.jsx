@@ -59,24 +59,50 @@ function Projects() {
         {/* Project 02 */}
         <article className="project project-reverse">
           <div className="project-image">
-            <img src="/images/project-2.jpg" alt="Project 2" />
+            <img src="/images/elonkorjuu.png" alt="Elonkorjuu - Vampire game" />
           </div>
 
           <div className="project-content">
-            <span className="project-number">02</span>
+            <h3>Elonkorjuu - Live Harvest</h3>
 
-            <h3>Project Name</h3>
-
-            <p>TODO</p>
+            <p>
+              Vampire speedrunning game made originally for Ludum Dare 52 in 72
+              hours. Elonkorjuu fared well in the game jam and got a lot of
+              positive{" "}
+              <a
+                href="https://www.digitallydownloaded.net/2023/01/interesting-games-on-itch-io-january-16.html"
+                className="text-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                attention
+              </a>{" "}
+              with its 1-bit artstyle.
+              <br />
+              <br />
+              After developing the game in Unity at first, we switched to Bevy
+              Engine using Rust.
+              <br />
+              <br />
+              <a
+                href="https://codingduck.itch.io/elonkorjuu"
+                className="text-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                DOWNLOAD
+              </a>
+            </p>
 
             <div className="project-meta">
-              <span>Tech 1</span>
-              <span>Tech 2</span>
-              <span>Tech 3</span>
+              <span>C#</span>
+              <span>Unity Engine</span>
+              <span>Rust</span>
+              <span>Bevy Engine</span>
             </div>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/TuttiAnkka/Elonkorjuu2"
               target="_blank"
               rel="noreferrer"
               className="project-link"
