@@ -1,3 +1,5 @@
+import AsciiArt from "./AsciiArt";
+
 function Projects() {
   return (
     <section className="projects" id="projects">
@@ -56,7 +58,7 @@ function Projects() {
           </div>
         </article>
 
-        {/* Project 02 */}
+        {/* Project 02  */}
         <article className="project project-reverse">
           <div className="project-image">
             <img src="/images/elonkorjuu.png" alt="Elonkorjuu - Vampire game" />
@@ -113,26 +115,28 @@ function Projects() {
         </article>
 
         {/* Project 03 */}
-        <article className="project">
-          <div className="project-image">
-            <img src="/images/project-3.jpg" alt="Project 3" />
+        <article className="project project-ascii">
+          <div className="ascii-project">
+            <AsciiArt file="/ascii/profile.txt"></AsciiArt>
           </div>
 
           <div className="project-content">
-            <span className="project-number">03</span>
+            <h3>BMP-ASCII</h3>
 
-            <h3>Project Name</h3>
-
-            <p>TODO</p>
+            <p>
+              Small command-line tool written in C, which converts BMP images
+              into ASCII art. This project teached me a lot about C pointers,
+              file handling and byte handling.
+            </p>
 
             <div className="project-meta">
-              <span>Tech 1</span>
-              <span>Tech 2</span>
-              <span>Tech 3</span>
+              <span>C</span>
+              <span>GNU Make</span>
+              <span>GCC</span>
             </div>
 
             <a
-              href="https://github.com/"
+              href="https://github.com/TuttiAnkka/BMP-Ascii"
               target="_blank"
               rel="noreferrer"
               className="project-link"

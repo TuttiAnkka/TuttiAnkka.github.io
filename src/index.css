@@ -385,6 +385,69 @@ p {
 }
 
 /* =========================
+   ASCII Project Image
+========================= */
+
+.ascii-project {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  width: 100%;
+
+  overflow: visible;
+
+  background: transparent;
+}
+
+.ascii-project pre {
+  margin: 0;
+
+  font-family: monospace;
+
+  white-space: pre;
+
+  background: rgb(242, 242, 242) !important;
+  color: black !important;
+  overflow: hidden;
+
+  /*
+  background: #090909;
+  color: #e5e5e5;
+  */
+
+  border-radius: 28px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.089),
+    0 0 30px rgba(255, 255, 255, 0.133);
+
+  transform: scale(1);
+  transform-origin: center;
+
+  transition:
+    transform 0.5s ease,
+    color 0.3s ease;
+}
+
+.ascii-project:hover pre {
+  transform: scale(1.5);
+}
+
+.project-ascii {
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.project-ascii .ascii-project pre {
+  font-size: 5px;
+  line-height: 5px;
+
+  transform: scale(1);
+}
+
+/* =========================
    Project Image
 ========================= */
 
