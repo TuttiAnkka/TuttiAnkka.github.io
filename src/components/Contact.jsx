@@ -38,11 +38,13 @@ function Contact() {
               LinkedIn ↗
             </a>
 
-            {/*
-            <a href="https://instagram.com/" target="_blank" rel="noreferrer">
-              Instagram ↗
+            <a
+              href="https://www.youtube.com/@ElmeriN"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Youtube ↗
             </a>
-            */}
           </div>
         </div>
       </div>
