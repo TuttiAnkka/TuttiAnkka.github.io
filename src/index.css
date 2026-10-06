@@ -799,4 +799,21 @@ main {
   .project-content h3 {
     font-size: 38px;
   }
+  .ascii-project {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .ascii-project pre {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 2.5px;
+    line-height: 2.5px;
+    transform: none;
+  }
+
+  .ascii-project:hover pre {
+    transform: none;
+  }
 }
